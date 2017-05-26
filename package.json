@@ -1,0 +1,45 @@
+{
+  "name": "groundwork.rocks",
+  "version": "0.1.0",
+  "description": "Modular CSS Starter Kit using Metalsmith",
+  "author": "Jake Rayson <contact@growdigital.org>",
+  "license": [
+    "MIT ",
+    "GNU GENERAL PUBLIC LICENSE"
+  ],
+  "private": true,
+  "dependencies": {
+    "@frctl/fractal": "^1.1.3",
+    "handlebars": "^4.0.5",
+    "handlebars-layouts": "^3.1.4",
+    "metalsmith": "^2.1.0",
+    "metalsmith-clean-css": "^5.0.1",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-concat": "^6.0.0",
+    "metalsmith-date-formatter": "^1.0.2",
+    "metalsmith-discover-partials": "^0.1.0",
+    "metalsmith-drafts": "^0.0.1",
+    "metalsmith-feed": "^0.2.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-layouts": "^1.4.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-postcss": "^4.0.0",
+    "metalsmith-serve": "^0.0.7",
+    "normalize.css": "^7.0.0",
+    "postcss-cssnext": "^2.9.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "metalsmith-writemetadata": "^0.4.5",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "DEBUG=metalsmith* node index.js",
+    "dev": "npm run browser_sync & NODE_ENV=development nodemon --exec 'npm start && browser-sync reload'",
+    "browser_sync": "browser-sync start --server build --browser='google chrome'",
+    "build": "node index.js & fractal build",
+    "fractal": "fractal start",
+    "fractalbuild": "fractal build"
+  }
+}

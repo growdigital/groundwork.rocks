@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+{{> head}}
+<body class="{{ pageClass }}">
+
+  {{> header}}
+  <div class="main__wrapper">
+    <main class="main" role="main">
+
+      {{{ contents }}}
+
+      {{#each collections }}
+      <h2>Posts</h2>
+        <ol>
+        {{#each this }}
+          <li><a href="/{{ this.path }}">{{ this.title }}</a></li>
+        {{/each}}
+        </ol>
+      {{/each}}
+
+    </main>
+  </div><!-- end .main__wrapper -->
+
+  {{> aside}}
+
+{{> footer}}
+
+<script src="/assets/scripts.js"></script>
+</body>
+</html>
