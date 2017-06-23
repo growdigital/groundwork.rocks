@@ -7,6 +7,7 @@ var feed        = require('metalsmith-feed');
 var ignore      = require('metalsmith-ignore');
 var templates   = require('metalsmith-layouts');
 var markdown    = require('metalsmith-markdown');
+var move        = require('metalsmith-move').default;
 var partials    = require('metalsmith-discover-partials');
 var permalinks  = require('metalsmith-permalinks');
 var postcss     = require('metalsmith-postcss');
@@ -95,6 +96,9 @@ Metalsmith(__dirname)
   }))
   .use(templates({
     engine: 'handlebars'
+  }))
+  .use(move({
+    'assets/modules/components/**/**/*.+(png|svg|jpg)': 'assets/images/{name}{ext}'
   }))
   .build(function(err, files) {
     if (err) { throw err; }
