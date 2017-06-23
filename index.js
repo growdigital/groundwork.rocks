@@ -10,7 +10,6 @@ var markdown    = require('metalsmith-markdown');
 var partials    = require('metalsmith-discover-partials');
 var permalinks  = require('metalsmith-permalinks');
 var postcss     = require('metalsmith-postcss');
-var rewrite     = require('metalsmith-rewrite');
 var metadata    = require('metalsmith-writemetadata');
 var handlebars  = require('handlebars');
 
@@ -32,8 +31,6 @@ Metalsmith(__dirname)
     'assets/modules/**/**/**/*.hbs',
     'assets/modules/**/**/**/**/*.hbs'
   ]))
-
-
   // Concat: the order is important
   // Concat CSS
   .use(concat({
@@ -76,8 +73,6 @@ Metalsmith(__dirname)
       reverse: true
     }
   }))
-
-
   // For debugging, use metadata
   // .use(metadata({
   //   pattern: ['*.md', '*.html']
@@ -101,19 +96,6 @@ Metalsmith(__dirname)
   .use(templates({
     engine: 'handlebars'
   }))
-  // .use(rewrite({
-  //   pattern: 'assets/modules/components/**/**/*.+(svg|png|jpg)'
-  // }))
-
-  // .use(rewrite({
-  //   pattern: 'blog/**/*.html',
-  //   filename: 'blog/*.html'
-  // }))
-
-  // .use(rewrite({
-  //   pattern: 'assets/modules/components/graphics/icon/icon.svg'
-  //   , filename: 'assets/images/icon.svg'
-  // }))
   .build(function(err, files) {
     if (err) { throw err; }
   });
