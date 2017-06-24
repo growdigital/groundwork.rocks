@@ -648,6 +648,41 @@ code, pre {
   background-color: #2a3c41;
 }
 /* ==========================================================================
+   GitHub Ribbon
+   ========================================================================== */
+
+.github-ribbon img {
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+/* ==========================================================================
+   Icon
+   ========================================================================== */
+
+/**
+ * Cacheable Ajax SVG icons for the win win win
+ * Big thanks to Florens Verschelde:
+ * https://fvsch.com/code/svg-icons/how-to/#section-sprite
+ */
+
+/* Hide SVG icons Ajaxed in */
+#js-svg {
+  display: none;
+}
+
+.icon {
+  fill: currentColor;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.15em;
+}
+
+
+/* ==========================================================================
    Main nav
    ==========================================================================*/
 
@@ -720,41 +755,6 @@ code, pre {
           justify-content: center;
 }
 
-
-
-/* ==========================================================================
-   GitHub Ribbon
-   ========================================================================== */
-
-.github-ribbon img {
-  border: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 10;
-}
-
-/* ==========================================================================
-   Icon
-   ========================================================================== */
-
-/**
- * Cacheable Ajax SVG icons for the win win win
- * Big thanks to Florens Verschelde:
- * https://fvsch.com/code/svg-icons/how-to/#section-sprite
- */
-
-/* Hide SVG icons Ajaxed in */
-#js-svg {
-  display: none;
-}
-
-.icon {
-  fill: currentColor;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: -0.15em;
-}
 
 
 /* ==========================================================================
@@ -874,12 +874,6 @@ code, pre {
 }
 
 
-.u-cf:after {
-    content:"";
-    display:table;
-    clear:both;
-}
-
 /* ==========================================================================
    Utilities - display
    ========================================================================== */
@@ -897,6 +891,12 @@ code, pre {
   padding: 0 !important;
   position: absolute !important;
   width: 1px !important;
+}
+
+.u-cf:after {
+    content:"";
+    display:table;
+    clear:both;
 }
 
 /* ==========================================================================
@@ -951,4 +951,16 @@ code, pre {
 .u-debug {
   outline: 1px solid red !important;
 }
+
+/* temp, work out logic */
+.js .u-js-hiddenvisually {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
 
