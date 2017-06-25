@@ -19,3 +19,9 @@
   height: 1.5em;
   vertical-align: -0.15em;
 }
+
+/* Icon figure used without margins, as a container for image and caption */
+.icon__figure {
+  margin: 0;
+  text-align: center;
+}

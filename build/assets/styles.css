@@ -681,6 +681,12 @@ code, pre {
   vertical-align: -0.15em;
 }
 
+/* Icon figure used without margins, as a container for image and caption */
+.icon__figure {
+  margin: 0;
+  text-align: center;
+}
+
 
 /* ==========================================================================
    Main nav
@@ -772,7 +778,14 @@ code, pre {
 }
 
 .footer__social a {
+  display: block;
   padding: 0 0.75em;
+}
+
+/* Hide underline for icon figcaption */
+.footer__social a:link,
+.footer__social a:visited {
+  text-decoration: none;
 }
 
 .footer__small {
@@ -953,7 +966,7 @@ code, pre {
 }
 
 /* temp, work out logic */
-.js .u-js-hiddenvisually {
+.svg .u-js-hiddenvisually {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
   height: 1px !important;
