@@ -28,3 +28,7 @@
   width: 1px !important;
 }
 
+/* Object! */
+.o-list-disc {
+  list-style-type: disc;
+}
