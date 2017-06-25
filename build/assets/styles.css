@@ -702,6 +702,81 @@ code, pre {
 
 
 /* ==========================================================================
+   Main nav
+   ==========================================================================*/
+
+/**
+ * Main navigation list
+ */
+
+
+
+.nav {
+  background-color: #603600;
+  /*display: flex;*/
+  font-family: 'Rubik', sans-serif;
+  /*justify-content: center;*/
+  padding: 0.8em 2em 0.7em;
+}
+
+.nav--footer {
+  background-color: #794400;
+}
+
+.nav a {
+  border-radius: 0.2em;
+  padding: 0.2em 0.8em 0.3em;
+  text-decoration: none;
+}
+
+/* Menu page trails */
+
+.home .nav .home,
+.principles .nav .principles,
+.organisation .nav .organisation,
+.syntax .nav .syntax
+{
+  background-color: #502601;
+}
+
+.home .nav a:hover {
+  background-color: #fdf6e3;
+  color: #2a3c41;
+
+}
+
+.nav a,
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+  color: white;
+}
+
+/*.nav > * {
+  padding: 0 1em;
+}
+*/
+
+/* ==========================================================================
+   Secondary nav
+   ==========================================================================*/
+
+/**
+ * Secondary navigation list
+ */
+
+.navsec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
@@ -826,81 +901,6 @@ code, pre {
 
 
 /* ==========================================================================
-   Main nav
-   ==========================================================================*/
-
-/**
- * Main navigation list
- */
-
-
-
-.nav {
-  background-color: #603600;
-  /*display: flex;*/
-  font-family: 'Rubik', sans-serif;
-  /*justify-content: center;*/
-  padding: 0.8em 2em 0.7em;
-}
-
-.nav--footer {
-  background-color: #794400;
-}
-
-.nav a {
-  border-radius: 0.2em;
-  padding: 0.2em 0.8em 0.3em;
-  text-decoration: none;
-}
-
-/* Menu page trails */
-
-.home .nav .home,
-.principles .nav .principles,
-.organisation .nav .organisation,
-.syntax .nav .syntax
-{
-  background-color: #502601;
-}
-
-.home .nav a:hover {
-  background-color: #fdf6e3;
-  color: #2a3c41;
-
-}
-
-.nav a,
-.nav a:hover,
-.nav a:focus,
-.nav a:active {
-  color: white;
-}
-
-/*.nav > * {
-  padding: 0 1em;
-}
-*/
-
-/* ==========================================================================
-   Secondary nav
-   ==========================================================================*/
-
-/**
- * Secondary navigation list
- */
-
-.navsec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-
-
-/* ==========================================================================
    Utilities - display
    ========================================================================== */
 
@@ -978,8 +978,8 @@ code, pre {
   outline: 1px solid red !important;
 }
 
-/* temp, work out logic */
-.svg .u-js-hiddenvisually {
+/* TODO: temp -- incorporate with @extend ??? */
+.svg .icons .u-js-hiddenvisually {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
   height: 1px !important;

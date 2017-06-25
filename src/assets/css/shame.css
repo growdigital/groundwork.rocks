@@ -17,8 +17,8 @@
   outline: 1px solid red !important;
 }
 
-/* temp, work out logic */
-.svg .u-js-hiddenvisually {
+/* TODO: temp -- incorporate with @extend ??? */
+.svg .icons .u-js-hiddenvisually {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
   height: 1px !important;
