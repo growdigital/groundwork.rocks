@@ -1,0 +1,12 @@
+/* ==========================================================================
+   list-disc
+   ==========================================================================*/
+
+/**
+ * List style type disc, for ordered lists to look like unordered lists.
+ * I know. But there is logic here.
+ */
+
+.o-list-disc {
+  list-style-type: disc;
+}

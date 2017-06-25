@@ -644,6 +644,23 @@ code, pre {
 }
 
 /* ==========================================================================
+   list-disc
+   ==========================================================================*/
+
+/**
+ * List style type disc, for ordered lists to look like unordered lists.
+ * I know. But there is logic here.
+ */
+
+.o-list-disc {
+  list-style-type: disc;
+}
+
+
+.textfield {
+  background-color: #2a3c41;
+}
+/* ==========================================================================
    GitHub Ribbon
    ========================================================================== */
 
@@ -682,85 +699,6 @@ code, pre {
   margin: 0;
   text-align: center;
 }
-
-
-
-.textfield {
-  background-color: #2a3c41;
-}
-/* ==========================================================================
-   Main nav
-   ==========================================================================*/
-
-/**
- * Main navigation list
- */
-
-
-
-.nav {
-  background-color: #603600;
-  /*display: flex;*/
-  font-family: 'Rubik', sans-serif;
-  /*justify-content: center;*/
-  padding: 0.8em 2em 0.7em;
-}
-
-.nav--footer {
-  background-color: #794400;
-}
-
-.nav a {
-  border-radius: 0.2em;
-  padding: 0.2em 0.8em 0.3em;
-  text-decoration: none;
-}
-
-/* Menu page trails */
-
-.home .nav .home,
-.principles .nav .principles,
-.organisation .nav .organisation,
-.syntax .nav .syntax
-{
-  background-color: #502601;
-}
-
-.home .nav a:hover {
-  background-color: #fdf6e3;
-  color: #2a3c41;
-
-}
-
-.nav a,
-.nav a:hover,
-.nav a:focus,
-.nav a:active {
-  color: white;
-}
-
-/*.nav > * {
-  padding: 0 1em;
-}
-*/
-
-/* ==========================================================================
-   Secondary nav
-   ==========================================================================*/
-
-/**
- * Secondary navigation list
- */
-
-.navsec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 
 
 /* ==========================================================================
@@ -888,6 +826,81 @@ code, pre {
 
 
 /* ==========================================================================
+   Main nav
+   ==========================================================================*/
+
+/**
+ * Main navigation list
+ */
+
+
+
+.nav {
+  background-color: #603600;
+  /*display: flex;*/
+  font-family: 'Rubik', sans-serif;
+  /*justify-content: center;*/
+  padding: 0.8em 2em 0.7em;
+}
+
+.nav--footer {
+  background-color: #794400;
+}
+
+.nav a {
+  border-radius: 0.2em;
+  padding: 0.2em 0.8em 0.3em;
+  text-decoration: none;
+}
+
+/* Menu page trails */
+
+.home .nav .home,
+.principles .nav .principles,
+.organisation .nav .organisation,
+.syntax .nav .syntax
+{
+  background-color: #502601;
+}
+
+.home .nav a:hover {
+  background-color: #fdf6e3;
+  color: #2a3c41;
+
+}
+
+.nav a,
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+  color: white;
+}
+
+/*.nav > * {
+  padding: 0 1em;
+}
+*/
+
+/* ==========================================================================
+   Secondary nav
+   ==========================================================================*/
+
+/**
+ * Secondary navigation list
+ */
+
+.navsec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+
+/* ==========================================================================
    Utilities - display
    ========================================================================== */
 
@@ -974,10 +987,5 @@ code, pre {
   padding: 0 !important;
   position: absolute !important;
   width: 1px !important;
-}
-
-/* Object! */
-.o-list-disc {
-  list-style-type: disc;
 }
 
