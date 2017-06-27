@@ -4,21 +4,11 @@
 <body class="no-js {{ pageClass }}">
 
   {{> header}}
-  <div class="main__wrapper">
-    <main class="main" role="main">
+  <main class="content" role="main">
 
-      {{{ contents }}}
+    {{{ contents }}}
 
-      {{#each collections }}
-      <h2>Posts</h2>
-        <ol class="o-list-disc">
-        {{#each this }}
-          <li><a href="/{{ this.path }}">{{ this.title }}</a></li>
-        {{/each}}
-        </ol>
-      {{/each}}
-
-    </main>
+  </main>
   </div><!-- end .main__wrapper -->
 
   {{> aside}}

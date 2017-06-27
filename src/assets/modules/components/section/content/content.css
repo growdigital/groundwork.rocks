@@ -1,14 +1,15 @@
 /* ==========================================================================
-   Main
+   Content -- main & aside
    ========================================================================== */
 
-.main {
+.content {
+  background-color: var(--offwhite);
   margin: 0 auto;
   max-width: 44em;
   padding: 1em;
 }
 
-.main__wrapper {
-  background-color: var(--offwhite);
+/* Make subsequent content blocks have zero padding */
+.content + .content {
+  padding-top: 0;
 }
-
