@@ -900,12 +900,6 @@ code, pre {
 }
 
 
-.u-cf:after {
-    content:"";
-    display:table;
-    clear:both;
-}
-
 /* ==========================================================================
    Utilities - display
    ========================================================================== */
@@ -923,6 +917,12 @@ code, pre {
   padding: 0 !important;
   position: absolute !important;
   width: 1px !important;
+}
+
+.u-cf:after {
+    content:"";
+    display:table;
+    clear:both;
 }
 
 /* ==========================================================================
