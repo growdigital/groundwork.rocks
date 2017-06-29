@@ -781,7 +781,6 @@ code, pre {
    ========================================================================== */
 
 .content {
-  background-color: #fdf6e3;
   margin: 0 auto;
   max-width: 44em;
   padding: 1em;
@@ -902,6 +901,18 @@ code, pre {
 }
 
 /* ==========================================================================
+   Wrapper
+   ========================================================================== */
+
+/**
+ * Coloured wrapper for content background
+ */
+
+.wrapper {
+  background-color: #fdf6e3;
+}
+
+/* ==========================================================================
    Utilities - display
    ========================================================================== */
 
@@ -927,21 +938,6 @@ code, pre {
 }
 
 /* ==========================================================================
-   Utility - textbreak
-   ========================================================================== */
-
-/**
- * Word breaking
- *
- * Break strings when their length exceeds the width of their container.
- */
-
-.u-textbreak {
-  word-wrap: break-word !important;
-}
-
-
-/* ==========================================================================
    Utility - link-block
    ========================================================================== */
 
@@ -959,6 +955,21 @@ code, pre {
   display: block !important;
   text-decoration: none !important;
 }
+
+/* ==========================================================================
+   Utility - textbreak
+   ========================================================================== */
+
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+
+.u-textbreak {
+  word-wrap: break-word !important;
+}
+
 
 /* ==========================================================================
    Shameful CSS

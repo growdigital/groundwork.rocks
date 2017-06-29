@@ -4,14 +4,12 @@
 <body class="no-js {{ pageClass }}">
 
   {{> header}}
-  <main class="content" role="main">
-
-    {{{ contents }}}
-
-  </main>
-  </div><!-- end .main__wrapper -->
-
-  {{> aside}}
+  <div class="wrapper">
+    <main class="content" role="main">
+      {{{ contents }}}
+    </main>
+    {{> aside}}
+  </div>{{!-- end .wrapper --}}
 
 {{> footer}}
 

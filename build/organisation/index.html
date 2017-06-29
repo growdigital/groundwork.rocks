@@ -36,9 +36,9 @@
       </ol>
     </nav>
   </header>
-  <main class="content" role="main">
-
-    <h1 id="css-organisation">CSS Organisation</h1>
+  <div class="wrapper">
+    <main class="content" role="main">
+      <h1 id="css-organisation">CSS Organisation</h1>
 <p>The CSS organisation is loosely based on <a href="https://github.com/itcss">Inverted Triangle CSS</a> by <a href="https://twitter.com/csswizardry">Harry Roberts</a>. The <strong>inverted triangle</strong> is from the broadest and most applicable styles (variables, base) through to specific modules (objects and components) and then on to <em>very specific</em> trumping <a href="https://github.com/suitcss/utils">utilities</a> and <a href="https://csswizardry.com/2013/04/shame-css/">shameful hacks</a>.</p>
 <ol>
 <li><strong>Variables</strong>: global variables and site-wide settings eg <code>responsive.css</code></li>
@@ -86,24 +86,22 @@ everything else. Overrides and helper classes eg <code>.u-hiddenvisually {}</cod
         │   └── media
         └── utilities
 </code></pre>
-
-  </main>
-  </div><!-- end .main__wrapper -->
-
-  <aside class="content" role="complementary">
-    <h2>Posts</h2>
-      <ol class="o-list-disc">
-        <li><a href="/./posts/enough-of-this-prefix-madness">Enough of this &#x60;prefix-&#x60; madness!</a></li>
-        <li><a href="/./posts/screencast-of-installation">Screencast of installation!</a></li>
-        <li><a href="/./posts/twitter-a-go-go">Twitter A Go Go</a></li>
-        <li><a href="/./posts/animated-gifs-are-in-production">Animated GIFs are in production</a></li>
-        <li><a href="/./posts/trending-on-github">Trending on GitHub</a></li>
-        <li><a href="/./posts/semver-setup">semver setup</a></li>
-        <li><a href="/./posts/front-matter-snippet-for-sublime-text-in-metalsmith-post">Front Matter snippet for Sublime Text in Metalsmith post</a></li>
-        <li><a href="/./posts/hbs-or-hbt-all-the-little-detail">hbs or hbt – all the little detail</a></li>
-        <li><a href="/./posts/groundwork-rocks-soft-launch">groundwork.rocks soft launch!</a></li>
-      </ol>
-  </aside>
+    </main>
+    <aside class="content" role="complementary">
+      <h2>Posts</h2>
+        <ol class="o-list-disc">
+          <li><a href="/./posts/enough-of-this-prefix-madness">Enough of this &#x60;prefix-&#x60; madness!</a></li>
+          <li><a href="/./posts/screencast-of-installation">Screencast of installation!</a></li>
+          <li><a href="/./posts/twitter-a-go-go">Twitter A Go Go</a></li>
+          <li><a href="/./posts/animated-gifs-are-in-production">Animated GIFs are in production</a></li>
+          <li><a href="/./posts/trending-on-github">Trending on GitHub</a></li>
+          <li><a href="/./posts/semver-setup">semver setup</a></li>
+          <li><a href="/./posts/front-matter-snippet-for-sublime-text-in-metalsmith-post">Front Matter snippet for Sublime Text in Metalsmith post</a></li>
+          <li><a href="/./posts/hbs-or-hbt-all-the-little-detail">hbs or hbt – all the little detail</a></li>
+          <li><a href="/./posts/groundwork-rocks-soft-launch">groundwork.rocks soft launch!</a></li>
+        </ol>
+    </aside>
+  </div>
 
 <footer class="footer" id="footer" role="contentinfo">
   <nav role="navigation">
@@ -141,7 +139,7 @@ everything else. Overrides and helper classes eg <code>.u-hiddenvisually {}</cod
         </a>
       </li>
       <li>
-        <a href="mailto:contact@growdigital.org" aria-label="Email" title="Email link to the author">
+        <a href="mailto:contact@groundwork.rocks" aria-label="Email" title="Email link to the author">
           <figure class="icon__figure">
             <svg class="icon icon--email" aria-hidden="true"><use xlink:href="#icon-email"/></svg>
             <figcaption class="icon__caption u-js-hiddenvisually">Email</figcaption>
