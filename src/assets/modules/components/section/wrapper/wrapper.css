@@ -10,3 +10,15 @@
   background-color: var(--offwhite);
   padding-top: 1em;
 }
+
+
+.wrapper > * {
+  margin: 0 auto;
+  max-width: 44em;
+  padding: 1em;
+}
+
+/* Make subsequent content blocks have zero padding */
+.wrapper > * + * {
+  padding-top: 0;
+}

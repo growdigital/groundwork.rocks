@@ -656,10 +656,10 @@ code, pre {
   list-style-type: disc;
 }
 
+
 .textfield {
   background-color: #2a3c41;
 }
-
 /* ==========================================================================
    GitHub Ribbon
    ========================================================================== */
@@ -698,6 +698,18 @@ code, pre {
 .icon__figure {
   margin: 0;
   text-align: center;
+}
+
+/* Hide icon figcaption if svg detected and icons file found
+   TODO: temp -- incorporate with @extend ??? */
+.svg .icons .u-js-hiddenvisually {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
 }
 
 
@@ -777,21 +789,6 @@ code, pre {
 
 
 /* ==========================================================================
-   Content -- main & aside
-   ========================================================================== */
-
-.content {
-  margin: 0 auto;
-  max-width: 44em;
-  padding: 1em;
-}
-
-/* Make subsequent content blocks have zero padding */
-.content + .content {
-  padding-top: 0;
-}
-
-/* ==========================================================================
    Footer
    ========================================================================== */
 
@@ -838,6 +835,31 @@ code, pre {
 .footer__link a:active {
   color: white;
   text-decoration: underline;
+}
+
+/* ==========================================================================
+   Wrapper
+   ========================================================================== */
+
+/**
+ * Coloured wrapper for content background
+ */
+
+.wrapper {
+  background-color: #fdf6e3;
+  padding-top: 1em;
+}
+
+
+.wrapper > * {
+  margin: 0 auto;
+  max-width: 44em;
+  padding: 1em;
+}
+
+/* Make subsequent content blocks have zero padding */
+.wrapper > * + * {
+  padding-top: 0;
 }
 
 /* ==========================================================================
@@ -901,38 +923,6 @@ code, pre {
 }
 
 /* ==========================================================================
-   Wrapper
-   ========================================================================== */
-
-/**
- * Coloured wrapper for content background
- */
-
-.wrapper {
-  background-color: #fdf6e3;
-  padding-top: 1em;
-}
-
-/* ==========================================================================
-   Utility - link-block
-   ========================================================================== */
-
-/**
- * Block-level link
- *
- * Combination of traits commonly used in vertical navigation lists.
- * https://github.com/suitcss/utils-link/blob/master/lib/link.css#L43
- */
-
-.u-link-block,
-.u-link-block:hover,
-.u-link-block:focus,
-.u-link-block:active {
-  display: block !important;
-  text-decoration: none !important;
-}
-
-/* ==========================================================================
    Utilities - display
    ========================================================================== */
 
@@ -955,6 +945,25 @@ code, pre {
     content:"";
     display:table;
     clear:both;
+}
+
+/* ==========================================================================
+   Utility - link-block
+   ========================================================================== */
+
+/**
+ * Block-level link
+ *
+ * Combination of traits commonly used in vertical navigation lists.
+ * https://github.com/suitcss/utils-link/blob/master/lib/link.css#L43
+ */
+
+.u-link-block,
+.u-link-block:hover,
+.u-link-block:focus,
+.u-link-block:active {
+  display: block !important;
+  text-decoration: none !important;
 }
 
 /* ==========================================================================
@@ -989,17 +998,6 @@ code, pre {
 
 .u-debug {
   outline: 1px solid red !important;
-}
-
-/* TODO: temp -- incorporate with @extend ??? */
-.svg .icons .u-js-hiddenvisually {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
 }
 
 
