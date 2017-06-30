@@ -487,7 +487,7 @@ html {
 
 /* Links */
 a {
-  color: #00f;
+  color: #006aa9;
   text-decoration: underline;
 }
 
@@ -499,7 +499,7 @@ a:active {
 }
 
 *:focus {
-  outline: dotted 1px #00f;
+  outline: dotted 1px #006aa9;
 }
 
 /* Prevents border on linked image in IE */
@@ -656,10 +656,10 @@ code, pre {
   list-style-type: disc;
 }
 
-
 .textfield {
   background-color: #2a3c41;
 }
+
 /* ==========================================================================
    GitHub Ribbon
    ========================================================================== */
@@ -913,10 +913,23 @@ code, pre {
   padding-top: 1em;
 }
 
-.u-cf:after {
-    content:"";
-    display:table;
-    clear:both;
+/* ==========================================================================
+   Utility - link-block
+   ========================================================================== */
+
+/**
+ * Block-level link
+ *
+ * Combination of traits commonly used in vertical navigation lists.
+ * https://github.com/suitcss/utils-link/blob/master/lib/link.css#L43
+ */
+
+.u-link-block,
+.u-link-block:hover,
+.u-link-block:focus,
+.u-link-block:active {
+  display: block !important;
+  text-decoration: none !important;
 }
 
 /* ==========================================================================
@@ -938,23 +951,10 @@ code, pre {
   width: 1px !important;
 }
 
-/* ==========================================================================
-   Utility - link-block
-   ========================================================================== */
-
-/**
- * Block-level link
- *
- * Combination of traits commonly used in vertical navigation lists.
- * https://github.com/suitcss/utils-link/blob/master/lib/link.css#L43
- */
-
-.u-link-block,
-.u-link-block:hover,
-.u-link-block:focus,
-.u-link-block:active {
-  display: block !important;
-  text-decoration: none !important;
+.u-cf:after {
+    content:"";
+    display:table;
+    clear:both;
 }
 
 /* ==========================================================================
