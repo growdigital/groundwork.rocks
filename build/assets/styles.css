@@ -656,10 +656,6 @@ code, pre {
   list-style-type: disc;
 }
 
-
-.textfield {
-  background-color: #2a3c41;
-}
 /* ==========================================================================
    GitHub Ribbon
    ========================================================================== */
@@ -712,6 +708,22 @@ code, pre {
   width: 1px !important;
 }
 
+/* ==========================================================================
+   Secondary nav
+   ==========================================================================*/
+
+/**
+ * Secondary navigation list
+ */
+
+.navsec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 /* ==========================================================================
    Main nav
@@ -720,8 +732,6 @@ code, pre {
 /**
  * Main navigation list
  */
-
-
 
 .nav {
   background-color: #603600;
@@ -743,10 +753,15 @@ code, pre {
 
 /* Menu page trails */
 
+/* Main nav */
 .home .nav .home,
 .principles .nav .principles,
 .organisation .nav .organisation,
-.syntax .nav .syntax
+.syntax .nav .syntax,
+/* Secondary nav */
+.ref .nav .ref,
+.tutorial .nav .tutorial,
+.about .nav .about
 {
   background-color: #502601;
 }
@@ -768,23 +783,6 @@ code, pre {
   padding: 0 1em;
 }
 */
-
-/* ==========================================================================
-   Secondary nav
-   ==========================================================================*/
-
-/**
- * Secondary navigation list
- */
-
-.navsec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 
 
 
@@ -941,12 +939,6 @@ code, pre {
   width: 1px !important;
 }
 
-.u-cf:after {
-    content:"";
-    display:table;
-    clear:both;
-}
-
 /* ==========================================================================
    Utility - link-block
    ========================================================================== */
@@ -981,6 +973,12 @@ code, pre {
 }
 
 
+.u-cf:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
 /* ==========================================================================
    Shameful CSS
    ========================================================================== */
@@ -999,5 +997,4 @@ code, pre {
 .u-debug {
   outline: 1px solid red !important;
 }
-
 
