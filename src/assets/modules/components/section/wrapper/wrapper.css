@@ -8,17 +8,11 @@
 
 .wrapper {
   background-color: var(--offwhite);
-  padding-top: 1em;
+  padding: 1.5em;
 }
-
 
 .wrapper > * {
   margin: 0 auto;
   max-width: 44em;
-  padding: 1em;
 }
 
-/* Make subsequent content blocks have zero padding */
-.wrapper > * + * {
-  padding-top: 0;
-}

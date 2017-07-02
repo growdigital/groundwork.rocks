@@ -709,23 +709,6 @@ code, pre {
 }
 
 /* ==========================================================================
-   Secondary nav
-   ==========================================================================*/
-
-/**
- * Secondary navigation list
- */
-
-.navsec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/* ==========================================================================
    Main nav
    ==========================================================================*/
 
@@ -784,8 +767,6 @@ code, pre {
 }
 */
 
-
-
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -833,31 +814,6 @@ code, pre {
 .footer__link a:active {
   color: white;
   text-decoration: underline;
-}
-
-/* ==========================================================================
-   Wrapper
-   ========================================================================== */
-
-/**
- * Coloured wrapper for content background
- */
-
-.wrapper {
-  background-color: #fdf6e3;
-  padding-top: 1em;
-}
-
-
-.wrapper > * {
-  margin: 0 auto;
-  max-width: 44em;
-  padding: 1em;
-}
-
-/* Make subsequent content blocks have zero padding */
-.wrapper > * + * {
-  padding-top: 0;
 }
 
 /* ==========================================================================
@@ -921,6 +877,25 @@ code, pre {
 }
 
 /* ==========================================================================
+   Wrapper
+   ========================================================================== */
+
+/**
+ * Coloured wrapper for content background
+ */
+
+.wrapper {
+  background-color: #fdf6e3;
+  padding: 1.5em;
+}
+
+.wrapper > * {
+  margin: 0 auto;
+  max-width: 44em;
+}
+
+
+/* ==========================================================================
    Utilities - display
    ========================================================================== */
 
@@ -937,6 +912,12 @@ code, pre {
   padding: 0 !important;
   position: absolute !important;
   width: 1px !important;
+}
+
+.u-cf:after {
+    content:"";
+    display:table;
+    clear:both;
 }
 
 /* ==========================================================================
@@ -972,12 +953,6 @@ code, pre {
   word-wrap: break-word !important;
 }
 
-
-.u-cf:after {
-    content:"";
-    display:table;
-    clear:both;
-}
 
 /* ==========================================================================
    Shameful CSS
