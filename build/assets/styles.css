@@ -609,23 +609,6 @@ code, pre {
    Responsive breakpoints
    ========================================================================== */
 
-/* Media object */
-
-/* ==========================================================================
-   list-bare
-   ==========================================================================*/
-
-/**
- * The list-bare object removes any indents and bullet points from lists items
- * https://github.com/inuitcss/objects.list-bare/blob/master/_objects.list-bare.scss
- */
-
-.o-list-bare {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 /* ==========================================================================
    list-center
    ==========================================================================*/
@@ -644,6 +627,21 @@ code, pre {
 }
 
 /* ==========================================================================
+   list-bare
+   ==========================================================================*/
+
+/**
+ * The list-bare object removes any indents and bullet points from lists items
+ * https://github.com/inuitcss/objects.list-bare/blob/master/_objects.list-bare.scss
+ */
+
+.o-list-bare {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
    list-disc
    ==========================================================================*/
 
@@ -659,6 +657,11 @@ code, pre {
 /* ==========================================================================
    GitHub Ribbon
    ========================================================================== */
+
+/**
+ * Just the GitHub Fork Me! ribbon, absolutely positioned top right o’ the page
+ * Also, PNG file optimised, half the size
+ */
 
 .github-ribbon img {
   border: 0;
@@ -709,11 +712,11 @@ code, pre {
 }
 
 /* ==========================================================================
-   Main nav
+   Nav
    ==========================================================================*/
 
 /**
- * Main navigation list
+ * Used for main and secondary nav
  */
 
 .nav {
