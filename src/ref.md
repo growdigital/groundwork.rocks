@@ -31,7 +31,7 @@ Use this [development server](http://fractal.build/guide/web/server) for, er, de
 To [export static HTML](http://fractal.build/guide/web/builder) to the build directory:
 
 ```bash
-$ npm run fractal
+$ fractal build
 ```
 
 ## Syntax

@@ -25,7 +25,8 @@ Metalsmith(__dirname)
   })
   .source('./src')
   .destination('./build')
-  .clean(true)
+  // Only clean in dev. Set to false to preserve fractal styleguide.
+  .clean(false)
   .use(ignore([
     'docs/*',
     'assets/modules/**/**/*.hbs',
