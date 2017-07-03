@@ -5,9 +5,11 @@
   {{> header}}
 
   <div class="wrapper">
-    <h1>{{ title }}</h1>
-    <time>{{ date }}</time>
-    {{{ contents }}}
+    <div class="post">
+      <h1>{{ title }}</h1>
+      <time>{{ date }}</time>
+      {{{ contents }}}
+    </div>
   </div>{{!-- end .wrapper --}}
   {{> footer}}
 
