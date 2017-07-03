@@ -1,9 +1,10 @@
 /* ==========================================================================
-   Utilities - display
+   Utility - hidden visually
    ========================================================================== */
 
 /**
- * Trumping display utilities derived from SUIT CSS display utilities:
+ * Completely remove from the flow but leave available to screen readers.
+ * Trumping display utility derived from SUIT CSS display utilities:
  * https://github.com/suitcss/utils-display
  */
 
