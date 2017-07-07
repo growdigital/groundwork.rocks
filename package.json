@@ -1,6 +1,6 @@
 {
   "name": "groundwork.rocks",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Website for Groundwork, a Modular CSS Starter Kit using Metalsmith",
   "author": "Jake Rayson <contact@groundwork.rocks>",
   "license": [
@@ -26,7 +26,7 @@
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-postcss": "^4.0.0",
     "normalize.css": "^7.0.0",
-    "postcss-cssnext": "^2.9.0"
+    "postcss-cssnext": "^3.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",
