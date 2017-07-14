@@ -38,18 +38,23 @@
 
   <div class="wrapper">
     <div class="post">
-      <h1>Screencast of installation!</h1>
-      <time>Sat 1 Apr 2017</time>
-      <p>The animated GIF with <a href="http://www.telestream.net/screenflow/overview.htm">Screenflow</a> turned out to be 1.8MB, which is a bit big for what is essentially these commands:</p>
-<pre><code>$ git clone git@github.com:growdigital/groundwork.git
-$ cd groundwork
-$ npm install
-$ npm run dev
-</code></pre><p>So, I made a <strong>plain text</strong> screencast with the fabulous <a href="https://asciinema.org">asciinema</a>:</p>
-<script type="text/javascript" src="https://asciinema.org/a/dstnak4qnlo13kgfc3wrvpfz2.js" id="asciicast-dstnak4qnlo13kgfc3wrvpfz2" async data-speed="2" data-theme="solarized-dark"></script>
-
-<p>It’s double speed and a <em>bit</em> boring. But the good news is that, if you have <a href="https://nodejs.org/en/download/">Node.js</a> installed, you can have a Modular CSS website running in <strong>1 minute and 30 seconds</strong>. Pretty cool.</p>
-<p>There is a way to <a href="https://asciinema.org/docs/faq">edit recorded asciicasts</a> but I haven’t figured it out yet. </p>
+      <h1>Setup Groundwork on your computer</h1>
+      <time>Thu 6 Jul 2017</time>
+      <p>Before anything else, make sure you have <a href="https://nodejs.org/en/download/">Node.js</a> and <a href="https://git-scm.com/">git</a> installed. It would be good to have a <a href="https://github.com/">GitHub</a>, <a href="https://bitbucket.org/product">BitBucket</a> or similar account setup. </p>
+<p>In your terminal, move to the place where you build websites and type:</p>
+<pre><code class="lang-bash">$ git clone git@github.com:growdigital/groundwork.git
+</code></pre>
+<p>This clones the Groundwork git repository onto your computer. Then, change directory into groundwork:</p>
+<pre><code class="lang-bash">$ cd groundwork
+</code></pre>
+<p>Cool. To complete the installation, you need to install the myriad Node.js plugins for the website to work:</p>
+<pre><code class="lang-bash">$ npm install
+</code></pre>
+<p>Should take just a few minutes. When that’s finished, you can start up the development server!</p>
+<pre><code class="lang-bash">$ npm run dev
+</code></pre>
+<p>Way to go! This <em>should</em> start up a web browser and display the blank Groundwork website, looking a little like this:</p>
+<p><img src="/assets/images/01setup.png" alt="Screenshot of blank Groundwork website working on local dev server"></p>
 
     </div>
   </div>
