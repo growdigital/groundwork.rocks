@@ -12,7 +12,7 @@ A quick way to start writing [modular CSS](/principles/), Groundwork is easy to 
 Make sure to have [Node.js](https://nodejs.org/en/download/) and [git](https://git-scm.com/) installed. Run these commands in your terminal:
 
 ```bash
-$ git clone git@github.com:growdigital/groundwork.git
+$ git clone git@github.com:growdigital/groundwork-0.1.11.git
 $ cd groundwork
 $ npm install
 $ npm run dev
