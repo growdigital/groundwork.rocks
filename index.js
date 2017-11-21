@@ -18,7 +18,7 @@ Metalsmith(__dirname)
   .metadata({
     site: {
       title: "Groundwork",
-      description: "Modular CSS Starter Kit. It rocks.",
+      description: "Metalsmith blog template. It rocks.",
       url: "https://www.groundwork.rocks/",
       author: "Jake Rayson"
     }
