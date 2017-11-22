@@ -5,6 +5,8 @@ pageClass: home
 
 ---
 
+## NB DEVELOPMENT OF TOTALLY NEW VERSION IN PROGRESS!
+
 # Quick and easy Modular CSS
 
 A quick way to start writing [modular CSS](/principles/), Groundwork is easy to install and comes complete with a fully-fledged [static site generator](http://www.metalsmith.io/) and [styleguide](http://fractal.build/).
