@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-gb">
 {{> head}}
+
 <body class="no-js {{ pageClass }}">
 
   {{> header}}
@@ -8,11 +9,11 @@
     <main role="main">
       {{{ contents }}}
     </main>
-    {{> aside}}
-  </div>{{!-- end .wrapper --}}
+    {{!-- {{> aside}} --}}
+  </div>
+  {{> footer}}
 
-{{> footer}}
-
-<script src="/assets/scripts.js"></script>
+  <script src="/assets/scripts.js"></script>
 </body>
+
 </html>
