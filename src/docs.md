@@ -136,15 +136,15 @@ A guiding principle in [Kanban](https://en.wikipedia.org/wiki/Kanban_(developmen
 ## Credits & further reading
 
 * [MindBEMding – getting your head ’round BEM syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) by [Harry Roberts](https://twitter.com/csswizardry)
-* [More transparent UI code with namespaces](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
+* [More transparent UI code with namespaces](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) by [Harry Roberts](https://twitter.com/csswizardry)
 * [CSS Wizardry blog](https://csswizardry.com/archive/) by [Harry Roberts](https://twitter.com/csswizardry)
 * [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) by [Nicolas Gallagher](https://twitter.com/necolas)
-* [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/) 
-* [SUIT CSS documentation](https://github.com/suitcss/suit/blob/master/doc/README.md)
-* [SUIT CSS utilities](https://github.com/suitcss/utils)
+* [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/) by [Nicolas Gallagher](https://twitter.com/necolas)
+* [SUIT CSS documentation](https://github.com/suitcss/suit/blob/master/doc/README.md) by [Nicolas Gallagher](https://twitter.com/necolas)
+* [SUIT CSS utilities](https://github.com/suitcss/utils) by [Nicolas Gallagher](https://twitter.com/necolas)
 * [Scalable and Modular Architecture for CSS](https://smacss.com/) by [Jonathan Snook](https://twitter.com/snookca)
 * [BEM Methodology](https://en.bem.info/) (Block Element Modifier) by [Yandex](https://www.yandex.com/) 
 * [BEM Resources](https://github.com/sturobson/BEM-resources) (awesome) by [Stu Robson](http://www.alwaystwisted.com/)
-* [Pattern Lab](http://patternlab.io/) by [Brad Frost](https://twitter.com/brad_frost) – inspirational work with a lovely interface
-* [http://styleguides.io/](http://styleguides.io/) a website of **styleguides** curated by [Brad Frost](https://twitter.com/brad_frost) and [Anna Debenham](https://twitter.com/anna_debenham)
-* [Front-end Style Guides](http://www.maban.co.uk/projects/front-end-style-guides/) book by Anna Debenham.
+* [Pattern Lab](http://patternlab.io/) by [Brad Frost](https://twitter.com/brad_frost)
+* Website [http://styleguides.io/](http://styleguides.io/) of **styleguides** curated by [Brad Frost](https://twitter.com/brad_frost) and [Anna Debenham](https://twitter.com/anna_debenham)
+* [Front-end Style Guides](http://www.maban.co.uk/projects/front-end-style-guides/) book by [Anna Debenham](https://twitter.com/anna_debenham)
