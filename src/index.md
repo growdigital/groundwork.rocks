@@ -13,6 +13,7 @@ See [www.groundwork.rocks](https://www.groundwork.rocks) for instructions. [Fork
 ```bash
 $ git clone git@github.com:growdigital/groundwork.git
 $ cd groundwork
+$ npm install
 $ npm run dev
 ```
 
