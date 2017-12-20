@@ -16,3 +16,8 @@
 .u-debug {
   outline: 1px solid red !important;
 }
+
+h2 {
+  margin-bottom: 0.4rem;
+  margin-top: 1.5rem;
+}
